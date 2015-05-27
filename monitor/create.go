@@ -62,7 +62,6 @@ func AuthSuffix(meta interface{}) string {
 }
 
 func Create(d *schema.ResourceData, meta interface{}) error {
-	log.Println("CREATE")
 	warningBody, _ := MarshalMetric(d, "warning")
 	criticalBody, _ := MarshalMetric(d, "critical")
 

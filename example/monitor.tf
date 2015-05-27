@@ -9,12 +9,12 @@ resource "datadog_monitor_metric" "test" {
     operator = ">"
 
     warning {
-        threshold = 50
+        threshold = 80
         notify = "@slack-team-infra"
     }
 
     critical {
-        threshold = 80
+        threshold = 100
         notify = "@slack-team-infra @pagerduty"
     }
 }

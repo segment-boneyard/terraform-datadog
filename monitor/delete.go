@@ -1,7 +1,19 @@
 package monitor
 
-import "github.com/hashicorp/terraform/helper/schema"
+import (
+	"fmt"
+	"net/http"
+	"strings"
 
-func Delete(d *schema.ResourceData, meta interface{}) error {
-	return nil
+	"github.com/hashicorp/terraform/helper/schema"
+)
+
+func Delete(d *schema.ResourceData, meta interface{}) (e error) {
+	for _, v := range strings.Split(d.Id(), "__") {
+		client := http.Client{}
+		req, _ := http.NewRequest("DELETE", fmt.Sprintf("%s/%s%s", MONITOR_ENDPOINT, v, AuthSuffix(meta)), nil)
+		_, err := client.Do(req)
+		e = err
+	}
+	return
 }
