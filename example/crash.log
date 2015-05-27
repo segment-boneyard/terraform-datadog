@@ -1,0 +1,1229 @@
+2015/05/27 21:03:13 [INFO] Terraform version: 0.5.3 dev 
+2015/05/27 21:03:13 Detected home directory from env var: /root
+2015/05/27 21:03:13 Detected home directory from env var: /root
+2015/05/27 21:03:13 [DEBUG] Attempting to open CLI config file: /root/.terraformrc
+2015/05/27 21:03:13 Detected home directory from env var: /root
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.ConfigTransformer:
+
+datadog_monitor_metric.test
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.OrphanTransformer:
+
+datadog_monitor_metric.test
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.AddOutputOrphanTransformer:
+
+datadog_monitor_metric.test
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.MissingProviderTransformer:
+
+datadog_monitor_metric.test
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.ProviderTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.PruneProviderTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.DisableProviderTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.MissingProvisionerTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.ProvisionerTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.PruneProvisionerTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.VertexTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.FlattenTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.ProxyTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.RootTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.DestroyTransformer:
+
+datadog_monitor_metric.test
+  datadog_monitor_metric.test (destroy tainted)
+  datadog_monitor_metric.test (destroy)
+  provider.datadog
+datadog_monitor_metric.test (destroy tainted)
+  provider.datadog
+datadog_monitor_metric.test (destroy)
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.CreateBeforeDestroyTransformer:
+
+datadog_monitor_metric.test
+  datadog_monitor_metric.test (destroy tainted)
+  datadog_monitor_metric.test (destroy)
+  provider.datadog
+datadog_monitor_metric.test (destroy tainted)
+  provider.datadog
+datadog_monitor_metric.test (destroy)
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.PruneDestroyTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.RootTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.TransitiveReductionTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [INFO] Starting graph walk: walkInput
+2015/05/27 21:03:13 [DEBUG] vertex root.provider.datadog: walking
+2015/05/27 21:03:13 [DEBUG] vertex root.provider.datadog: evaluating
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalSequence
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalInitProvider
+2015/05/27 21:03:13 [DEBUG] Starting plugin: /root/dev/bin/terraform-datadog []string{"/root/dev/bin/terraform-datadog"}
+2015/05/27 21:03:13 [DEBUG] Waiting for RPC address for: /root/dev/bin/terraform-datadog
+2015/05/27 21:03:13 terraform-datadog: 2015/05/27 21:03:13 Plugin address: unix /tmp/tf-plugin767014929
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalOpFilter
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalSequence
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalGetProvider
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalInterpolate
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalBuildProviderConfig
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalInputProvider
+2015/05/27 21:03:13 [DEBUG] root: eval: terraform.EvalNoop
+2015/05/27 21:03:13 [DEBUG] vertex root.datadog_monitor_metric.test: walking
+2015/05/27 21:03:13 [DEBUG] vertex root.datadog_monitor_metric.test: evaluating
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalSequence
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalInterpolate
+2015/05/27 21:03:13 [DEBUG] root: eval: terraform.EvalNoop
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalCountFixZeroOneBoundary
+2015/05/27 21:03:13 [DEBUG] vertex root.datadog_monitor_metric.test: expanding/walking dynamic subgraph
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.ResourceCountTransformer:
+
+datadog_monitor_metric.test
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.RootTransformer:
+
+datadog_monitor_metric.test
+2015/05/27 21:03:13 [DEBUG] vertex root.datadog_monitor_metric.test: walking
+2015/05/27 21:03:13 [DEBUG] vertex root.datadog_monitor_metric.test: evaluating
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalSequence
+2015/05/27 21:03:13 [DEBUG] root: eval: terraform.EvalNoop
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalInstanceInfo
+2015/05/27 21:03:13 [DEBUG] root: eval: terraform.EvalNoop
+2015/05/27 21:03:13 [DEBUG] root: eval: terraform.EvalNoop
+2015/05/27 21:03:13 [DEBUG] root: eval: terraform.EvalNoop
+2015/05/27 21:03:13 [DEBUG] root: eval: terraform.EvalNoop
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.ConfigTransformer:
+
+datadog_monitor_metric.test
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.OrphanTransformer:
+
+datadog_monitor_metric.test
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.AddOutputOrphanTransformer:
+
+datadog_monitor_metric.test
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.MissingProviderTransformer:
+
+datadog_monitor_metric.test
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.ProviderTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.PruneProviderTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.DisableProviderTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.MissingProvisionerTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.ProvisionerTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.PruneProvisionerTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.VertexTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.FlattenTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.ProxyTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.RootTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.DestroyTransformer:
+
+datadog_monitor_metric.test
+  datadog_monitor_metric.test (destroy tainted)
+  datadog_monitor_metric.test (destroy)
+  provider.datadog
+datadog_monitor_metric.test (destroy tainted)
+  provider.datadog
+datadog_monitor_metric.test (destroy)
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.CreateBeforeDestroyTransformer:
+
+datadog_monitor_metric.test
+  datadog_monitor_metric.test (destroy tainted)
+  datadog_monitor_metric.test (destroy)
+  provider.datadog
+datadog_monitor_metric.test (destroy tainted)
+  provider.datadog
+datadog_monitor_metric.test (destroy)
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.PruneDestroyTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.RootTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.TransitiveReductionTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [INFO] Starting graph walk: walkValidate
+2015/05/27 21:03:13 [DEBUG] vertex root.provider.datadog: walking
+2015/05/27 21:03:13 [DEBUG] vertex root.provider.datadog: evaluating
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalSequence
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalInitProvider
+2015/05/27 21:03:13 [DEBUG] root: eval: terraform.EvalNoop
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalOpFilter
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalSequence
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalGetProvider
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalInterpolate
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalBuildProviderConfig
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalValidateProvider
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalConfigProvider
+2015/05/27 21:03:13 terraform-datadog: 2015/05/27 21:03:13 &{map[api_key:0xc2080e1b00 app_key:0xc2080e1bc0] <nil> <nil> 0xc2080b67a0 <nil> <nil> <nil> false map[] {{0 0} 0}}
+2015/05/27 21:03:13 [DEBUG] vertex root.datadog_monitor_metric.test: walking
+2015/05/27 21:03:13 [DEBUG] vertex root.datadog_monitor_metric.test: evaluating
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalSequence
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalInterpolate
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalOpFilter
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalValidateCount
+2015/05/27 21:03:13 [ERROR] root: eval: *terraform.EvalValidateCount, err: Warnings: []. Errors: []
+2015/05/27 21:03:13 [ERROR] root: eval: *terraform.EvalOpFilter, err: Warnings: []. Errors: []
+2015/05/27 21:03:13 [ERROR] root: eval: *terraform.EvalSequence, err: Warnings: []. Errors: []
+2015/05/27 21:03:13 [DEBUG] vertex root.datadog_monitor_metric.test: expanding/walking dynamic subgraph
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.ResourceCountTransformer:
+
+datadog_monitor_metric.test
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.RootTransformer:
+
+datadog_monitor_metric.test
+2015/05/27 21:03:13 [DEBUG] vertex root.datadog_monitor_metric.test: walking
+2015/05/27 21:03:13 [DEBUG] vertex root.datadog_monitor_metric.test: evaluating
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalSequence
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalOpFilter
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalSequence
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalGetProvider
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalInterpolate
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalValidateResource
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalInstanceInfo
+2015/05/27 21:03:13 [DEBUG] root: eval: terraform.EvalNoop
+2015/05/27 21:03:13 [DEBUG] root: eval: terraform.EvalNoop
+2015/05/27 21:03:13 [DEBUG] root: eval: terraform.EvalNoop
+2015/05/27 21:03:13 [DEBUG] root: eval: terraform.EvalNoop
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.ConfigTransformer:
+
+datadog_monitor_metric.test
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.OrphanTransformer:
+
+datadog_monitor_metric.test
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.AddOutputOrphanTransformer:
+
+datadog_monitor_metric.test
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.MissingProviderTransformer:
+
+datadog_monitor_metric.test
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.ProviderTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.PruneProviderTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.DisableProviderTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.MissingProvisionerTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.ProvisionerTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.PruneProvisionerTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.VertexTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.FlattenTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.ProxyTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.RootTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.DestroyTransformer:
+
+datadog_monitor_metric.test
+  datadog_monitor_metric.test (destroy tainted)
+  datadog_monitor_metric.test (destroy)
+  provider.datadog
+datadog_monitor_metric.test (destroy tainted)
+  provider.datadog
+datadog_monitor_metric.test (destroy)
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.CreateBeforeDestroyTransformer:
+
+datadog_monitor_metric.test
+  datadog_monitor_metric.test (destroy tainted)
+  datadog_monitor_metric.test (destroy)
+  provider.datadog
+datadog_monitor_metric.test (destroy tainted)
+  provider.datadog
+datadog_monitor_metric.test (destroy)
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.PruneDestroyTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.RootTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.TransitiveReductionTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [INFO] Starting graph walk: walkRefresh
+2015/05/27 21:03:13 [DEBUG] vertex root.provider.datadog: walking
+2015/05/27 21:03:13 [DEBUG] vertex root.provider.datadog: evaluating
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalSequence
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalInitProvider
+2015/05/27 21:03:13 [DEBUG] root: eval: terraform.EvalNoop
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalOpFilter
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalSequence
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalGetProvider
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalInterpolate
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalBuildProviderConfig
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalValidateProvider
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalConfigProvider
+2015/05/27 21:03:13 terraform-datadog: 2015/05/27 21:03:13 &{map[api_key:0xc2080eb080 app_key:0xc2080eb140] <nil> <nil> 0xc2080f65a0 <nil> <nil> <nil> false map[] {{0 0} 0}}
+2015/05/27 21:03:13 [DEBUG] vertex root.datadog_monitor_metric.test: walking
+2015/05/27 21:03:13 [DEBUG] vertex root.datadog_monitor_metric.test: evaluating
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalSequence
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalInterpolate
+2015/05/27 21:03:13 [DEBUG] root: eval: terraform.EvalNoop
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalCountFixZeroOneBoundary
+2015/05/27 21:03:13 [DEBUG] vertex root.datadog_monitor_metric.test: expanding/walking dynamic subgraph
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.ResourceCountTransformer:
+
+datadog_monitor_metric.test
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.RootTransformer:
+
+datadog_monitor_metric.test
+2015/05/27 21:03:13 [DEBUG] vertex root.datadog_monitor_metric.test: walking
+2015/05/27 21:03:13 [DEBUG] vertex root.datadog_monitor_metric.test: evaluating
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalSequence
+2015/05/27 21:03:13 [DEBUG] root: eval: terraform.EvalNoop
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalInstanceInfo
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalOpFilter
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalSequence
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalGetProvider
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalReadState
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalRefresh
+2015/05/27 21:03:13 [DEBUG] refresh: datadog_monitor_metric.test: no state, not refreshing
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalWriteState
+2015/05/27 21:03:13 [DEBUG] root: eval: terraform.EvalNoop
+2015/05/27 21:03:13 [DEBUG] root: eval: terraform.EvalNoop
+2015/05/27 21:03:13 [DEBUG] root: eval: terraform.EvalNoop
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.ConfigTransformer:
+
+datadog_monitor_metric.test
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.OrphanTransformer:
+
+datadog_monitor_metric.test
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.AddOutputOrphanTransformer:
+
+datadog_monitor_metric.test
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.MissingProviderTransformer:
+
+datadog_monitor_metric.test
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.ProviderTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.PruneProviderTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.DisableProviderTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.MissingProvisionerTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.ProvisionerTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.PruneProvisionerTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.VertexTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.FlattenTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.ProxyTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.RootTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.DestroyTransformer:
+
+datadog_monitor_metric.test
+  datadog_monitor_metric.test (destroy tainted)
+  datadog_monitor_metric.test (destroy)
+  provider.datadog
+datadog_monitor_metric.test (destroy tainted)
+  provider.datadog
+datadog_monitor_metric.test (destroy)
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.CreateBeforeDestroyTransformer:
+
+datadog_monitor_metric.test
+  datadog_monitor_metric.test (destroy tainted)
+  datadog_monitor_metric.test (destroy)
+  provider.datadog
+datadog_monitor_metric.test (destroy tainted)
+  provider.datadog
+datadog_monitor_metric.test (destroy)
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.PruneDestroyTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.RootTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.TransitiveReductionTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [INFO] Starting graph walk: walkPlan
+2015/05/27 21:03:13 [DEBUG] vertex root.provider.datadog: walking
+2015/05/27 21:03:13 [DEBUG] vertex root.provider.datadog: evaluating
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalSequence
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalInitProvider
+2015/05/27 21:03:13 [DEBUG] root: eval: terraform.EvalNoop
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalOpFilter
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalSequence
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalGetProvider
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalInterpolate
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalBuildProviderConfig
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalValidateProvider
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalConfigProvider
+2015/05/27 21:03:13 terraform-datadog: 2015/05/27 21:03:13 &{map[api_key:0xc208108480 app_key:0xc208108540] <nil> <nil> 0xc2080f7200 <nil> <nil> <nil> false map[] {{0 0} 0}}
+2015/05/27 21:03:13 [DEBUG] vertex root.datadog_monitor_metric.test: walking
+2015/05/27 21:03:13 [DEBUG] vertex root.datadog_monitor_metric.test: evaluating
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalSequence
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalInterpolate
+2015/05/27 21:03:13 [DEBUG] root: eval: terraform.EvalNoop
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalCountFixZeroOneBoundary
+2015/05/27 21:03:13 [DEBUG] vertex root.datadog_monitor_metric.test: expanding/walking dynamic subgraph
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.ResourceCountTransformer:
+
+datadog_monitor_metric.test
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.RootTransformer:
+
+datadog_monitor_metric.test
+2015/05/27 21:03:13 [DEBUG] vertex root.datadog_monitor_metric.test: walking
+2015/05/27 21:03:13 [DEBUG] vertex root.datadog_monitor_metric.test: evaluating
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalSequence
+2015/05/27 21:03:13 [DEBUG] root: eval: terraform.EvalNoop
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalInstanceInfo
+2015/05/27 21:03:13 [DEBUG] root: eval: terraform.EvalNoop
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalOpFilter
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalSequence
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalInterpolate
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalGetProvider
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalReadState
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalDiff
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalCheckPreventDestroy
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalWriteState
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalDiffTainted
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalWriteDiff
+2015/05/27 21:03:13 [DEBUG] root: eval: terraform.EvalNoop
+2015/05/27 21:03:13 [DEBUG] root: eval: terraform.EvalNoop
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.ConfigTransformer:
+
+datadog_monitor_metric.test
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.OrphanTransformer:
+
+datadog_monitor_metric.test
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.AddOutputOrphanTransformer:
+
+datadog_monitor_metric.test
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.MissingProviderTransformer:
+
+datadog_monitor_metric.test
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.ProviderTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.PruneProviderTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.DisableProviderTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.MissingProvisionerTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.ProvisionerTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.PruneProvisionerTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.VertexTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.FlattenTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.ProxyTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.RootTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.DestroyTransformer:
+
+datadog_monitor_metric.test
+  datadog_monitor_metric.test (destroy tainted)
+  datadog_monitor_metric.test (destroy)
+  provider.datadog
+datadog_monitor_metric.test (destroy tainted)
+  provider.datadog
+datadog_monitor_metric.test (destroy)
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.CreateBeforeDestroyTransformer:
+
+datadog_monitor_metric.test
+  datadog_monitor_metric.test (destroy tainted)
+  datadog_monitor_metric.test (destroy)
+  provider.datadog
+datadog_monitor_metric.test (destroy tainted)
+  provider.datadog
+datadog_monitor_metric.test (destroy)
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.PruneDestroyTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.RootTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.TransitiveReductionTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.ConfigTransformer:
+
+datadog_monitor_metric.test
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.OrphanTransformer:
+
+datadog_monitor_metric.test
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.AddOutputOrphanTransformer:
+
+datadog_monitor_metric.test
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.MissingProviderTransformer:
+
+datadog_monitor_metric.test
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.ProviderTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.PruneProviderTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.DisableProviderTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.MissingProvisionerTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.ProvisionerTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.PruneProvisionerTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.VertexTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.FlattenTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.ProxyTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.RootTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.DestroyTransformer:
+
+datadog_monitor_metric.test
+  datadog_monitor_metric.test (destroy tainted)
+  datadog_monitor_metric.test (destroy)
+  provider.datadog
+datadog_monitor_metric.test (destroy tainted)
+  provider.datadog
+datadog_monitor_metric.test (destroy)
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.CreateBeforeDestroyTransformer:
+
+datadog_monitor_metric.test
+  datadog_monitor_metric.test (destroy tainted)
+  datadog_monitor_metric.test (destroy)
+  provider.datadog
+datadog_monitor_metric.test (destroy tainted)
+  provider.datadog
+datadog_monitor_metric.test (destroy)
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.PruneDestroyTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.RootTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.TransitiveReductionTransformer:
+
+datadog_monitor_metric.test
+  provider.datadog
+provider.datadog
+2015/05/27 21:03:13 [INFO] Starting graph walk: walkApply
+2015/05/27 21:03:13 [DEBUG] vertex root.provider.datadog: walking
+2015/05/27 21:03:13 [DEBUG] vertex root.provider.datadog: evaluating
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalSequence
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalInitProvider
+2015/05/27 21:03:13 [DEBUG] root: eval: terraform.EvalNoop
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalOpFilter
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalSequence
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalGetProvider
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalInterpolate
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalBuildProviderConfig
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalValidateProvider
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalConfigProvider
+2015/05/27 21:03:13 terraform-datadog: 2015/05/27 21:03:13 &{map[api_key:0xc208106300 app_key:0xc2081063c0] <nil> <nil> 0xc208117f90 <nil> <nil> <nil> false map[] {{0 0} 0}}
+2015/05/27 21:03:13 [DEBUG] vertex root.datadog_monitor_metric.test: walking
+2015/05/27 21:03:13 [DEBUG] vertex root.datadog_monitor_metric.test: evaluating
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalSequence
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalInterpolate
+2015/05/27 21:03:13 [DEBUG] root: eval: terraform.EvalNoop
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalCountFixZeroOneBoundary
+2015/05/27 21:03:13 [DEBUG] vertex root.datadog_monitor_metric.test: expanding/walking dynamic subgraph
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.ResourceCountTransformer:
+
+datadog_monitor_metric.test
+2015/05/27 21:03:13 [TRACE] Graph after step *terraform.RootTransformer:
+
+datadog_monitor_metric.test
+2015/05/27 21:03:13 [DEBUG] vertex root.datadog_monitor_metric.test: walking
+2015/05/27 21:03:13 [DEBUG] vertex root.datadog_monitor_metric.test: evaluating
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalSequence
+2015/05/27 21:03:13 [DEBUG] root: eval: terraform.EvalNoop
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalInstanceInfo
+2015/05/27 21:03:13 [DEBUG] root: eval: terraform.EvalNoop
+2015/05/27 21:03:13 [DEBUG] root: eval: terraform.EvalNoop
+2015/05/27 21:03:13 [DEBUG] root: eval: terraform.EvalNoop
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalOpFilter
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalSequence
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalReadDiff
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalIf
+2015/05/27 21:03:13 [DEBUG] root: eval: terraform.EvalNoop
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalIf
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalInterpolate
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalGetProvider
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalReadState
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalDiff
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalReadDiff
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalCompareDiff
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalGetProvider
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalReadState
+2015/05/27 21:03:13 [DEBUG] root: eval: *terraform.EvalApply
+2015/05/27 21:03:13 [DEBUG] apply: datadog_monitor_metric.test: executing Apply
+2015/05/27 21:03:13 terraform-datadog: 2015/05/27 21:03:13 CREATE
+2015/05/27 21:03:13 terraform-datadog: 2015/05/27 21:03:13 avg(last_5m):avg:app.some.metric{*} > 50
+2015/05/27 21:03:13 terraform-datadog: 2015/05/27 21:03:13 avg(last_5m):avg:app.some.metric{*} > 80
+2015/05/27 21:03:15 terraform-datadog: 2015/05/27 21:03:15 &{200 OK 200 HTTP/1.1 1 1 map[Cache-Control:[no-cache] Content-Type:[application/json; charset=utf-8] Date:[Wed, 27 May 2015 21:03:14 GMT] Pragma:[no-cache] Strict-Transport-Security:[max-age=15724800;] Vary:[Accept-Encoding] X-Dd-Version:[32.248] Connection:[keep-alive] Server:[gunicorn/19.1.0] X-Dd-Debug:[X1eM2Uo7cMh2oCCkDpEjgT0t8XaSFLQ6i1DM/IWjhAY=] X-Frame-Options:[SAMEORIGIN]] 0xc2080b90c0 -1 [] false map[] 0xc2080b29c0 0xc208131e00}
+2015/05/27 21:03:15 terraform-datadog: 2015/05/27 21:03:15 &{200 OK 200 HTTP/1.1 1 1 map[Server:[gunicorn/19.1.0] X-Dd-Debug:[X1eM2Uo7cMh2oCCkDpEjgT0t8XaSFLQ6i1DM/IWjhAY=] X-Frame-Options:[SAMEORIGIN] Vary:[Accept-Encoding] X-Dd-Version:[32.248] Cache-Control:[no-cache] Content-Type:[application/json; charset=utf-8] Date:[Wed, 27 May 2015 21:03:14 GMT] Pragma:[no-cache] Strict-Transport-Security:[max-age=15724800;] Connection:[keep-alive]] 0xc2080b90c0 -1 [] false map[] 0xc2080b29c0 0xc208131e00}
+2015/05/27 21:03:15 terraform-datadog: 2015/05/27 21:03:15 {"multi":false,"name":"[warning] App metric","query":"avg(last_5m):avg:app.some.metric{*} > 50","overall_state":"No Data","type":"metric alert","message":"This is so good @slack-team-infra","creator":{"id":98497,"handle":"vince@segment.com","name":"Vince Prignano","email":"vince@segment.com"},"org_id":22351,"id":194908,"options":{"notify_no_data":true,"no_data_timeframe":0,"notify_audit":false,"silenced":{}}}
+2015/05/27 21:03:15 terraform-datadog: panic: interface conversion: interface is float64, not string
+2015/05/27 21:03:15 terraform-datadog: 
+2015/05/27 21:03:15 terraform-datadog: goroutine 42 [running]:
+2015/05/27 21:03:15 terraform-datadog: github.com/segmentio/terraform-datadog/monitor.GetIDFromResponse(0xc208067830, 0x0, 0x0, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/segmentio/terraform-datadog/monitor/create.go:28 +0x455
+2015/05/27 21:03:15 terraform-datadog: github.com/segmentio/terraform-datadog/monitor.Create(0xc208104c00, 0x763100, 0xc2080f3200, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/segmentio/terraform-datadog/monitor/create.go:81 +0xaf3
+2015/05/27 21:03:15 terraform-datadog: github.com/hashicorp/terraform/helper/schema.(*Resource).Apply(0xc208113b80, 0xc2080dbaa0, 0xc2080b7920, 0x763100, 0xc2080f3200, 0x1, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/terraform/helper/schema/resource.go:145 +0x2c1
+2015/05/27 21:03:15 terraform-datadog: github.com/hashicorp/terraform/helper/schema.(*Provider).Apply(0xc20810d410, 0xc208122600, 0xc2080dbaa0, 0xc2080b7920, 0x743740, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/terraform/helper/schema/provider.go:155 +0x1da
+2015/05/27 21:03:15 terraform-datadog: github.com/hashicorp/terraform/rpc.(*ResourceProviderServer).Apply(0xc2081117e0, 0xc20801ffc0, 0xc2080b7c40, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/terraform/rpc/resource_provider.go:319 +0x7f
+2015/05/27 21:03:15 terraform-datadog: reflect.Value.call(0x7df100, 0x86b880, 0x13, 0x89af10, 0x4, 0xc20832ff28, 0x3, 0x3, 0x0, 0x0, ...)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/reflect/value.go:419 +0x10e5
+2015/05/27 21:03:15 terraform-datadog: reflect.Value.Call(0x7df100, 0x86b880, 0x13, 0xc20832ff28, 0x3, 0x3, 0x0, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/reflect/value.go:296 +0xbc
+2015/05/27 21:03:15 terraform-datadog: net/rpc.(*service).call(0xc208113c00, 0xc208113bc0, 0xc208117760, 0xc2080b0800, 0xc2080ee0a0, 0x7436e0, 0xc20801ffc0, 0x16, 0x743740, 0xc2080b7c40, ...)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/rpc/server.go:382 +0x1f7
+2015/05/27 21:03:15 terraform-datadog: created by net/rpc.(*Server).ServeCodec
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/rpc/server.go:476 +0x44a
+2015/05/27 21:03:15 terraform-datadog: 
+2015/05/27 21:03:15 terraform-datadog: goroutine 1 [IO wait]:
+2015/05/27 21:03:15 terraform-datadog: net.(*pollDesc).Wait(0xc2080101b0, 0x72, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/fd_poll_runtime.go:84 +0x47
+2015/05/27 21:03:15 terraform-datadog: net.(*pollDesc).WaitRead(0xc2080101b0, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/fd_poll_runtime.go:89 +0x43
+2015/05/27 21:03:15 terraform-datadog: net.(*netFD).accept(0xc208010150, 0x0, 0x7f58d0be3d70, 0xc20800aff0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/fd_unix.go:419 +0x40b
+2015/05/27 21:03:15 terraform-datadog: net.(*UnixListener).AcceptUnix(0xc20801ecc0, 0x437340, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/unixsock_posix.go:282 +0x56
+2015/05/27 21:03:15 terraform-datadog: net.(*UnixListener).Accept(0xc20801ecc0, 0x0, 0x0, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/unixsock_posix.go:293 +0x4c
+2015/05/27 21:03:15 terraform-datadog: github.com/hashicorp/terraform/rpc.(*Server).Accept(0xc20800ae20, 0x7f58d0be43c0, 0xc20801ecc0)
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/terraform/rpc/server.go:33 +0x37
+2015/05/27 21:03:15 terraform-datadog: github.com/hashicorp/terraform/plugin.Serve(0xc20800ae10)
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/terraform/plugin/server.go:88 +0x7e8
+2015/05/27 21:03:15 terraform-datadog: main.main()
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/segmentio/terraform-datadog/main.go:8 +0x6d
+2015/05/27 21:03:15 terraform-datadog: 
+2015/05/27 21:03:15 terraform-datadog: goroutine 5 [syscall]:
+2015/05/27 21:03:15 terraform-datadog: os/signal.loop()
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/os/signal/signal_unix.go:21 +0x1f
+2015/05/27 21:03:15 terraform-datadog: created by os/signal.init·1
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/os/signal/signal_unix.go:27 +0x35
+2015/05/27 21:03:15 terraform-datadog: 
+2015/05/27 21:03:15 terraform-datadog: goroutine 7 [chan receive]:
+2015/05/27 21:03:15 terraform-datadog: github.com/hashicorp/terraform/plugin.func·007()
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/terraform/plugin/server.go:79 +0x69
+2015/05/27 21:03:15 terraform-datadog: created by github.com/hashicorp/terraform/plugin.Serve
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/terraform/plugin/server.go:85 +0x7c4
+2015/05/27 21:03:15 terraform-datadog: 
+2015/05/27 21:03:15 terraform-datadog: goroutine 8 [select]:
+2015/05/27 21:03:15 terraform-datadog: github.com/hashicorp/yamux.(*Stream).Read(0xc20802e3c0, 0xc208089000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/yamux/stream.go:125 +0x3ab
+2015/05/27 21:03:15 terraform-datadog: bufio.(*Reader).fill(0xc2080305a0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/bufio/bufio.go:97 +0x1ce
+2015/05/27 21:03:15 terraform-datadog: bufio.(*Reader).Read(0xc2080305a0, 0xc20800b090, 0x1, 0x9, 0x401bc2, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/bufio/bufio.go:174 +0x26c
+2015/05/27 21:03:15 terraform-datadog: io.ReadAtLeast(0x7f58d0be5518, 0xc2080305a0, 0xc20800b090, 0x1, 0x9, 0x1, 0x0, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/io/io.go:298 +0xf1
+2015/05/27 21:03:15 terraform-datadog: io.ReadFull(0x7f58d0be5518, 0xc2080305a0, 0xc20800b090, 0x1, 0x9, 0x2c, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/io/io.go:316 +0x6d
+2015/05/27 21:03:15 terraform-datadog: encoding/gob.decodeUintReader(0x7f58d0be5518, 0xc2080305a0, 0xc20800b090, 0x9, 0x9, 0x0, 0x1, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/encoding/gob/decode.go:121 +0x99
+2015/05/27 21:03:15 terraform-datadog: encoding/gob.(*Decoder).recvMessage(0xc2080b0580, 0xc20809ab40)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/encoding/gob/decoder.go:76 +0x55
+2015/05/27 21:03:15 terraform-datadog: encoding/gob.(*Decoder).decodeTypeSequence(0xc2080b0580, 0xc20801f300, 0x16)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/encoding/gob/decoder.go:140 +0x47
+2015/05/27 21:03:15 terraform-datadog: encoding/gob.(*Decoder).DecodeValue(0xc2080b0580, 0x749560, 0xc20801f3e0, 0x16, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/encoding/gob/decoder.go:208 +0x192
+2015/05/27 21:03:15 terraform-datadog: encoding/gob.(*Decoder).Decode(0xc2080b0580, 0x749560, 0xc20801f3e0, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/encoding/gob/decoder.go:185 +0x297
+2015/05/27 21:03:15 terraform-datadog: net/rpc.(*gobServerCodec).ReadRequestHeader(0xc2080da0c0, 0xc20801f3e0, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/rpc/server.go:402 +0x5e
+2015/05/27 21:03:15 terraform-datadog: net/rpc.(*Server).readRequestHeader(0xc2080358c0, 0x7f58d0be5678, 0xc2080da0c0, 0x0, 0x0, 0xc20801f3e0, 0xc20800b000, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/rpc/server.go:575 +0x97
+2015/05/27 21:03:15 terraform-datadog: net/rpc.(*Server).readRequest(0xc2080358c0, 0x7f58d0be5678, 0xc2080da0c0, 0xc2080b0480, 0xc20801ee60, 0x760540, 0x0, 0x0, 0x0, 0x0, ...)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/rpc/server.go:542 +0xa2
+2015/05/27 21:03:15 terraform-datadog: net/rpc.(*Server).ServeCodec(0xc2080358c0, 0x7f58d0be5678, 0xc2080da0c0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/rpc/server.go:461 +0x6d
+2015/05/27 21:03:15 terraform-datadog: net/rpc.(*Server).ServeConn(0xc2080358c0, 0x7f58d0be55a0, 0xc20802e3c0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/rpc/server.go:453 +0x208
+2015/05/27 21:03:15 terraform-datadog: github.com/hashicorp/terraform/rpc.(*Server).ServeConn(0xc20800ae20, 0x7f58d0be54b8, 0xc208038078)
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/terraform/rpc/server.go:76 +0x530
+2015/05/27 21:03:15 terraform-datadog: created by github.com/hashicorp/terraform/rpc.(*Server).Accept
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/terraform/rpc/server.go:39 +0x173
+2015/05/27 21:03:15 terraform-datadog: 
+2015/05/27 21:03:15 terraform-datadog: goroutine 9 [IO wait]:
+2015/05/27 21:03:15 terraform-datadog: net.(*pollDesc).Wait(0xc208010220, 0x72, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/fd_poll_runtime.go:84 +0x47
+2015/05/27 21:03:15 terraform-datadog: net.(*pollDesc).WaitRead(0xc208010220, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/fd_poll_runtime.go:89 +0x43
+2015/05/27 21:03:15 terraform-datadog: net.(*netFD).Read(0xc2080101c0, 0xc20800f000, 0x1000, 0x1000, 0x0, 0x7f58d0be3d70, 0xc2080b7610)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/fd_unix.go:242 +0x40f
+2015/05/27 21:03:15 terraform-datadog: net.(*conn).Read(0xc208038078, 0xc20800f000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/net.go:121 +0xdc
+2015/05/27 21:03:15 terraform-datadog: bufio.(*Reader).fill(0xc208030180)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/bufio/bufio.go:97 +0x1ce
+2015/05/27 21:03:15 terraform-datadog: bufio.(*Reader).Read(0xc208030180, 0xc20800b020, 0xc, 0xc, 0xc2080b7600, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/bufio/bufio.go:174 +0x26c
+2015/05/27 21:03:15 terraform-datadog: io.ReadAtLeast(0x7f58d0be5518, 0xc208030180, 0xc20800b020, 0xc, 0xc, 0xc, 0x0, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/io/io.go:298 +0xf1
+2015/05/27 21:03:15 terraform-datadog: io.ReadFull(0x7f58d0be5518, 0xc208030180, 0xc20800b020, 0xc, 0xc, 0xc, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/io/io.go:316 +0x6d
+2015/05/27 21:03:15 terraform-datadog: github.com/hashicorp/yamux.(*Session).recvLoop(0xc208045ce0, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/yamux/session.go:373 +0x10d
+2015/05/27 21:03:15 terraform-datadog: github.com/hashicorp/yamux.(*Session).recv(0xc208045ce0)
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/yamux/session.go:361 +0x28
+2015/05/27 21:03:15 terraform-datadog: created by github.com/hashicorp/yamux.newSession
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/yamux/session.go:104 +0x499
+2015/05/27 21:03:15 terraform-datadog: 
+2015/05/27 21:03:15 terraform-datadog: goroutine 10 [select]:
+2015/05/27 21:03:15 terraform-datadog: github.com/hashicorp/yamux.(*Session).send(0xc208045ce0)
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/yamux/session.go:323 +0x554
+2015/05/27 21:03:15 terraform-datadog: created by github.com/hashicorp/yamux.newSession
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/yamux/session.go:105 +0x4b3
+2015/05/27 21:03:15 terraform-datadog: 
+2015/05/27 21:03:15 terraform-datadog: goroutine 11 [select]:
+2015/05/27 21:03:15 terraform-datadog: github.com/hashicorp/yamux.(*Session).keepalive(0xc208045ce0)
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/yamux/session.go:279 +0x106
+2015/05/27 21:03:15 terraform-datadog: created by github.com/hashicorp/yamux.newSession
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/yamux/session.go:107 +0x4de
+2015/05/27 21:03:15 terraform-datadog: 
+2015/05/27 21:03:15 terraform-datadog: goroutine 13 [select]:
+2015/05/27 21:03:15 terraform-datadog: github.com/hashicorp/yamux.(*Session).AcceptStream(0xc208045ce0, 0xc200000005, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/yamux/session.go:183 +0x1a8
+2015/05/27 21:03:15 terraform-datadog: github.com/hashicorp/terraform/rpc.(*muxBroker).Run(0xc20801ee20)
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/terraform/rpc/mux_broker.go:107 +0x37
+2015/05/27 21:03:15 terraform-datadog: created by github.com/hashicorp/terraform/rpc.(*Server).ServeConn
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/terraform/rpc/server.go:65 +0x388
+2015/05/27 21:03:15 terraform-datadog: 
+2015/05/27 21:03:15 terraform-datadog: goroutine 15 [select]:
+2015/05/27 21:03:15 terraform-datadog: github.com/hashicorp/yamux.(*Stream).Read(0xc20802e140, 0xc2080c3000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/yamux/stream.go:125 +0x3ab
+2015/05/27 21:03:15 terraform-datadog: bufio.(*Reader).fill(0xc208030a20)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/bufio/bufio.go:97 +0x1ce
+2015/05/27 21:03:15 terraform-datadog: bufio.(*Reader).Read(0xc208030a20, 0xc20800afa1, 0x1, 0x9, 0xc20807b858, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/bufio/bufio.go:174 +0x26c
+2015/05/27 21:03:15 terraform-datadog: io.ReadAtLeast(0x7f58d0be5518, 0xc208030a20, 0xc20800afa1, 0x1, 0x9, 0x1, 0x0, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/io/io.go:298 +0xf1
+2015/05/27 21:03:15 terraform-datadog: io.ReadFull(0x7f58d0be5518, 0xc208030a20, 0xc20800afa1, 0x1, 0x9, 0x1, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/io/io.go:316 +0x6d
+2015/05/27 21:03:15 terraform-datadog: encoding/gob.decodeUintReader(0x7f58d0be5518, 0xc208030a20, 0xc20800afa1, 0x9, 0x9, 0x0, 0x1, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/encoding/gob/decode.go:121 +0x99
+2015/05/27 21:03:15 terraform-datadog: encoding/gob.(*Decoder).recvMessage(0xc2080b0700, 0xc20809b320)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/encoding/gob/decoder.go:76 +0x55
+2015/05/27 21:03:15 terraform-datadog: encoding/gob.(*Decoder).decodeTypeSequence(0xc2080b0700, 0xc20801fd00, 0x16)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/encoding/gob/decoder.go:140 +0x47
+2015/05/27 21:03:15 terraform-datadog: encoding/gob.(*Decoder).DecodeValue(0xc2080b0700, 0x749560, 0xc20801fd00, 0x16, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/encoding/gob/decoder.go:208 +0x192
+2015/05/27 21:03:15 terraform-datadog: encoding/gob.(*Decoder).Decode(0xc2080b0700, 0x749560, 0xc20801fd00, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/encoding/gob/decoder.go:185 +0x297
+2015/05/27 21:03:15 terraform-datadog: net/rpc.(*gobServerCodec).ReadRequestHeader(0xc2080da6f0, 0xc20801fd00, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/rpc/server.go:402 +0x5e
+2015/05/27 21:03:15 terraform-datadog: net/rpc.(*Server).readRequestHeader(0xc2080b80c0, 0x7f58d0be5678, 0xc2080da6f0, 0x0, 0x0, 0xc20801fd00, 0xc20800af00, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/rpc/server.go:575 +0x97
+2015/05/27 21:03:15 terraform-datadog: net/rpc.(*Server).readRequest(0xc2080b80c0, 0x7f58d0be5678, 0xc2080da6f0, 0xc2080b0280, 0xc20801ec40, 0x7438c0, 0x0, 0x0, 0x0, 0x0, ...)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/rpc/server.go:542 +0xa2
+2015/05/27 21:03:15 terraform-datadog: net/rpc.(*Server).ServeCodec(0xc2080b80c0, 0x7f58d0be5678, 0xc2080da6f0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/rpc/server.go:461 +0x6d
+2015/05/27 21:03:15 terraform-datadog: net/rpc.(*Server).ServeConn(0xc2080b80c0, 0x7f58d0be55a0, 0xc20802e140)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/rpc/server.go:453 +0x208
+2015/05/27 21:03:15 terraform-datadog: github.com/hashicorp/terraform/rpc.serve(0x7f58d0be55a0, 0xc20802e140, 0x8ea2d0, 0x10, 0x86b7e0, 0xc20801ec20)
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/terraform/rpc/server.go:146 +0x1f9
+2015/05/27 21:03:15 terraform-datadog: github.com/hashicorp/terraform/rpc.func·001()
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/terraform/rpc/server.go:102 +0x265
+2015/05/27 21:03:15 terraform-datadog: created by github.com/hashicorp/terraform/rpc.(*dispenseServer).ResourceProvider
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/terraform/rpc/server.go:103 +0x107
+2015/05/27 21:03:15 terraform-datadog: 
+2015/05/27 21:03:15 terraform-datadog: goroutine 20 [select]:
+2015/05/27 21:03:15 terraform-datadog: github.com/hashicorp/yamux.(*Stream).Read(0xc20802e500, 0xc2080b5000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/yamux/stream.go:125 +0x3ab
+2015/05/27 21:03:15 terraform-datadog: bufio.(*Reader).fill(0xc208031440)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/bufio/bufio.go:97 +0x1ce
+2015/05/27 21:03:15 terraform-datadog: bufio.(*Reader).Read(0xc208031440, 0xc20800bea0, 0x1, 0x9, 0xc20807d858, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/bufio/bufio.go:174 +0x26c
+2015/05/27 21:03:15 terraform-datadog: io.ReadAtLeast(0x7f58d0be5518, 0xc208031440, 0xc20800bea0, 0x1, 0x9, 0x1, 0x0, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/io/io.go:298 +0xf1
+2015/05/27 21:03:15 terraform-datadog: io.ReadFull(0x7f58d0be5518, 0xc208031440, 0xc20800bea0, 0x1, 0x9, 0x1, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/io/io.go:316 +0x6d
+2015/05/27 21:03:15 terraform-datadog: encoding/gob.decodeUintReader(0x7f58d0be5518, 0xc208031440, 0xc20800bea0, 0x9, 0x9, 0x0, 0x1, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/encoding/gob/decode.go:121 +0x99
+2015/05/27 21:03:15 terraform-datadog: encoding/gob.(*Decoder).recvMessage(0xc2080b0d00, 0xc20809a6c0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/encoding/gob/decoder.go:76 +0x55
+2015/05/27 21:03:15 terraform-datadog: encoding/gob.(*Decoder).decodeTypeSequence(0xc2080b0d00, 0xc208072900, 0x16)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/encoding/gob/decoder.go:140 +0x47
+2015/05/27 21:03:15 terraform-datadog: encoding/gob.(*Decoder).DecodeValue(0xc2080b0d00, 0x749560, 0xc208072920, 0x16, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/encoding/gob/decoder.go:208 +0x192
+2015/05/27 21:03:15 terraform-datadog: encoding/gob.(*Decoder).Decode(0xc2080b0d00, 0x749560, 0xc208072920, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/encoding/gob/decoder.go:185 +0x297
+2015/05/27 21:03:15 terraform-datadog: net/rpc.(*gobServerCodec).ReadRequestHeader(0xc20806c150, 0xc208072920, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/rpc/server.go:402 +0x5e
+2015/05/27 21:03:15 terraform-datadog: net/rpc.(*Server).readRequestHeader(0xc2080b8bc0, 0x7f58d0be5678, 0xc20806c150, 0x0, 0x0, 0xc208072920, 0xc20800be00, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/rpc/server.go:575 +0x97
+2015/05/27 21:03:15 terraform-datadog: net/rpc.(*Server).readRequest(0xc2080b8bc0, 0x7f58d0be5678, 0xc20806c150, 0xc2080b0c80, 0xc208072100, 0x743aa0, 0x0, 0x0, 0x0, 0x0, ...)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/rpc/server.go:542 +0xa2
+2015/05/27 21:03:15 terraform-datadog: net/rpc.(*Server).ServeCodec(0xc2080b8bc0, 0x7f58d0be5678, 0xc20806c150)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/rpc/server.go:461 +0x6d
+2015/05/27 21:03:15 terraform-datadog: net/rpc.(*Server).ServeConn(0xc2080b8bc0, 0x7f58d0be55a0, 0xc20802e500)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/rpc/server.go:453 +0x208
+2015/05/27 21:03:15 terraform-datadog: github.com/hashicorp/terraform/rpc.serve(0x7f58d0be55a0, 0xc20802e500, 0x8ea2d0, 0x10, 0x86b7e0, 0xc2080720e0)
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/terraform/rpc/server.go:146 +0x1f9
+2015/05/27 21:03:15 terraform-datadog: github.com/hashicorp/terraform/rpc.func·001()
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/terraform/rpc/server.go:102 +0x265
+2015/05/27 21:03:15 terraform-datadog: created by github.com/hashicorp/terraform/rpc.(*dispenseServer).ResourceProvider
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/terraform/rpc/server.go:103 +0x107
+2015/05/27 21:03:15 terraform-datadog: 
+2015/05/27 21:03:15 terraform-datadog: goroutine 26 [select]:
+2015/05/27 21:03:15 terraform-datadog: github.com/hashicorp/yamux.(*Stream).Read(0xc20802e640, 0xc2080f5000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/yamux/stream.go:125 +0x3ab
+2015/05/27 21:03:15 terraform-datadog: bufio.(*Reader).fill(0xc208031d40)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/bufio/bufio.go:97 +0x1ce
+2015/05/27 21:03:15 terraform-datadog: bufio.(*Reader).Read(0xc208031d40, 0xc2080b7d51, 0x1, 0x9, 0x762c80, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/bufio/bufio.go:174 +0x26c
+2015/05/27 21:03:15 terraform-datadog: io.ReadAtLeast(0x7f58d0be5518, 0xc208031d40, 0xc2080b7d51, 0x1, 0x9, 0x1, 0x0, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/io/io.go:298 +0xf1
+2015/05/27 21:03:15 terraform-datadog: io.ReadFull(0x7f58d0be5518, 0xc208031d40, 0xc2080b7d51, 0x1, 0x9, 0x1, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/io/io.go:316 +0x6d
+2015/05/27 21:03:15 terraform-datadog: encoding/gob.decodeUintReader(0x7f58d0be5518, 0xc208031d40, 0xc2080b7d51, 0x9, 0x9, 0x0, 0x1, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/encoding/gob/decode.go:121 +0x99
+2015/05/27 21:03:15 terraform-datadog: encoding/gob.(*Decoder).recvMessage(0xc2080b1400, 0xc20809bd40)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/encoding/gob/decoder.go:76 +0x55
+2015/05/27 21:03:15 terraform-datadog: encoding/gob.(*Decoder).decodeTypeSequence(0xc2080b1400, 0xc2080ee100, 0x16)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/encoding/gob/decoder.go:140 +0x47
+2015/05/27 21:03:15 terraform-datadog: encoding/gob.(*Decoder).DecodeValue(0xc2080b1400, 0x749560, 0xc2080ee1e0, 0x16, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/encoding/gob/decoder.go:208 +0x192
+2015/05/27 21:03:15 terraform-datadog: encoding/gob.(*Decoder).Decode(0xc2080b1400, 0x749560, 0xc2080ee1e0, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/encoding/gob/decoder.go:185 +0x297
+2015/05/27 21:03:15 terraform-datadog: net/rpc.(*gobServerCodec).ReadRequestHeader(0xc2080f21e0, 0xc2080ee1e0, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/rpc/server.go:402 +0x5e
+2015/05/27 21:03:15 terraform-datadog: net/rpc.(*Server).readRequestHeader(0xc2080ecc40, 0x7f58d0be5678, 0xc2080f21e0, 0x0, 0x0, 0xc2080ee1e0, 0xc2080b7d00, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/rpc/server.go:575 +0x97
+2015/05/27 21:03:15 terraform-datadog: net/rpc.(*Server).readRequest(0xc2080ecc40, 0x7f58d0be5678, 0xc2080f21e0, 0xc2080b1080, 0xc2080eea00, 0x8672a0, 0x0, 0x0, 0x0, 0x0, ...)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/rpc/server.go:542 +0xa2
+2015/05/27 21:03:15 terraform-datadog: net/rpc.(*Server).ServeCodec(0xc2080ecc40, 0x7f58d0be5678, 0xc2080f21e0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/rpc/server.go:461 +0x6d
+2015/05/27 21:03:15 terraform-datadog: net/rpc.(*Server).ServeConn(0xc2080ecc40, 0x7f58d0be55a0, 0xc20802e640)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/rpc/server.go:453 +0x208
+2015/05/27 21:03:15 terraform-datadog: github.com/hashicorp/terraform/rpc.serve(0x7f58d0be55a0, 0xc20802e640, 0x8ea2d0, 0x10, 0x86b7e0, 0xc2080ee1c0)
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/terraform/rpc/server.go:146 +0x1f9
+2015/05/27 21:03:15 terraform-datadog: github.com/hashicorp/terraform/rpc.func·001()
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/terraform/rpc/server.go:102 +0x265
+2015/05/27 21:03:15 terraform-datadog: created by github.com/hashicorp/terraform/rpc.(*dispenseServer).ResourceProvider
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/terraform/rpc/server.go:103 +0x107
+2015/05/27 21:03:15 terraform-datadog: 
+2015/05/27 21:03:15 terraform-datadog: goroutine 31 [select]:
+2015/05/27 21:03:15 terraform-datadog: github.com/hashicorp/yamux.(*Stream).Read(0xc20802e780, 0xc20810b000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/yamux/stream.go:125 +0x3ab
+2015/05/27 21:03:15 terraform-datadog: bufio.(*Reader).fill(0xc208104420)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/bufio/bufio.go:97 +0x1ce
+2015/05/27 21:03:15 terraform-datadog: bufio.(*Reader).Read(0xc208104420, 0xc2080f69b1, 0x1, 0x9, 0xc2080ff858, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/bufio/bufio.go:174 +0x26c
+2015/05/27 21:03:15 terraform-datadog: io.ReadAtLeast(0x7f58d0be5518, 0xc208104420, 0xc2080f69b1, 0x1, 0x9, 0x1, 0x0, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/io/io.go:298 +0xf1
+2015/05/27 21:03:15 terraform-datadog: io.ReadFull(0x7f58d0be5518, 0xc208104420, 0xc2080f69b1, 0x1, 0x9, 0x1, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/io/io.go:316 +0x6d
+2015/05/27 21:03:15 terraform-datadog: encoding/gob.decodeUintReader(0x7f58d0be5518, 0xc208104420, 0xc2080f69b1, 0x9, 0x9, 0x0, 0x1, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/encoding/gob/decode.go:121 +0x99
+2015/05/27 21:03:15 terraform-datadog: encoding/gob.(*Decoder).recvMessage(0xc2080b1a00, 0xc208001200)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/encoding/gob/decoder.go:76 +0x55
+2015/05/27 21:03:15 terraform-datadog: encoding/gob.(*Decoder).decodeTypeSequence(0xc2080b1a00, 0xc2080ef800, 0x16)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/encoding/gob/decoder.go:140 +0x47
+2015/05/27 21:03:15 terraform-datadog: encoding/gob.(*Decoder).DecodeValue(0xc2080b1a00, 0x749560, 0xc2080ef8a0, 0x16, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/encoding/gob/decoder.go:208 +0x192
+2015/05/27 21:03:15 terraform-datadog: encoding/gob.(*Decoder).Decode(0xc2080b1a00, 0x749560, 0xc2080ef8a0, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/encoding/gob/decoder.go:185 +0x297
+2015/05/27 21:03:15 terraform-datadog: net/rpc.(*gobServerCodec).ReadRequestHeader(0xc2080f3800, 0xc2080ef8a0, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/rpc/server.go:402 +0x5e
+2015/05/27 21:03:15 terraform-datadog: net/rpc.(*Server).readRequestHeader(0xc2080ed6c0, 0x7f58d0be5678, 0xc2080f3800, 0x0, 0x0, 0xc2080ef8a0, 0xc2080f6900, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/rpc/server.go:575 +0x97
+2015/05/27 21:03:15 terraform-datadog: net/rpc.(*Server).readRequest(0xc2080ed6c0, 0x7f58d0be5678, 0xc2080f3800, 0xc2080b1700, 0xc2080ef080, 0x743800, 0x0, 0x0, 0x0, 0x0, ...)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/rpc/server.go:542 +0xa2
+2015/05/27 21:03:15 terraform-datadog: net/rpc.(*Server).ServeCodec(0xc2080ed6c0, 0x7f58d0be5678, 0xc2080f3800)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/rpc/server.go:461 +0x6d
+2015/05/27 21:03:15 terraform-datadog: net/rpc.(*Server).ServeConn(0xc2080ed6c0, 0x7f58d0be55a0, 0xc20802e780)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/rpc/server.go:453 +0x208
+2015/05/27 21:03:15 terraform-datadog: github.com/hashicorp/terraform/rpc.serve(0x7f58d0be55a0, 0xc20802e780, 0x8ea2d0, 0x10, 0x86b7e0, 0xc2080ef060)
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/terraform/rpc/server.go:146 +0x1f9
+2015/05/27 21:03:15 terraform-datadog: github.com/hashicorp/terraform/rpc.func·001()
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/terraform/rpc/server.go:102 +0x265
+2015/05/27 21:03:15 terraform-datadog: created by github.com/hashicorp/terraform/rpc.(*dispenseServer).ResourceProvider
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/terraform/rpc/server.go:103 +0x107
+2015/05/27 21:03:15 terraform-datadog: 
+2015/05/27 21:03:15 terraform-datadog: goroutine 37 [select]:
+2015/05/27 21:03:15 terraform-datadog: github.com/hashicorp/yamux.(*Stream).Read(0xc20802e280, 0xc208118000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/yamux/stream.go:125 +0x3ab
+2015/05/27 21:03:15 terraform-datadog: bufio.(*Reader).fill(0xc2081047e0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/bufio/bufio.go:97 +0x1ce
+2015/05/27 21:03:15 terraform-datadog: bufio.(*Reader).Read(0xc2081047e0, 0xc208117740, 0x1, 0x9, 0xc2080fd858, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/bufio/bufio.go:174 +0x26c
+2015/05/27 21:03:15 terraform-datadog: io.ReadAtLeast(0x7f58d0be5518, 0xc2081047e0, 0xc208117740, 0x1, 0x9, 0x1, 0x0, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/io/io.go:298 +0xf1
+2015/05/27 21:03:15 terraform-datadog: io.ReadFull(0x7f58d0be5518, 0xc2081047e0, 0xc208117740, 0x1, 0x9, 0x1, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/io/io.go:316 +0x6d
+2015/05/27 21:03:15 terraform-datadog: encoding/gob.decodeUintReader(0x7f58d0be5518, 0xc2081047e0, 0xc208117740, 0x9, 0x9, 0x0, 0x1, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/encoding/gob/decode.go:121 +0x99
+2015/05/27 21:03:15 terraform-datadog: encoding/gob.(*Decoder).recvMessage(0xc2080b1d00, 0xc20809bc20)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/encoding/gob/decoder.go:76 +0x55
+2015/05/27 21:03:15 terraform-datadog: encoding/gob.(*Decoder).decodeTypeSequence(0xc2080b1d00, 0xc208111800, 0x16)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/encoding/gob/decoder.go:140 +0x47
+2015/05/27 21:03:15 terraform-datadog: encoding/gob.(*Decoder).DecodeValue(0xc2080b1d00, 0x749560, 0xc208111800, 0x16, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/encoding/gob/decoder.go:208 +0x192
+2015/05/27 21:03:15 terraform-datadog: encoding/gob.(*Decoder).Decode(0xc2080b1d00, 0x749560, 0xc208111800, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/encoding/gob/decoder.go:185 +0x297
+2015/05/27 21:03:15 terraform-datadog: net/rpc.(*gobServerCodec).ReadRequestHeader(0xc20810d6e0, 0xc208111800, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/rpc/server.go:402 +0x5e
+2015/05/27 21:03:15 terraform-datadog: net/rpc.(*Server).readRequestHeader(0xc208113bc0, 0x7f58d0be5678, 0xc20810d6e0, 0x0, 0x0, 0xc208111800, 0xc208117700, 0x0, 0x0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/rpc/server.go:575 +0x97
+2015/05/27 21:03:15 terraform-datadog: net/rpc.(*Server).readRequest(0xc208113bc0, 0x7f58d0be5678, 0xc20810d6e0, 0xc2080b0800, 0xc2080ee0a0, 0x7436e0, 0x0, 0x0, 0x0, 0x0, ...)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/rpc/server.go:542 +0xa2
+2015/05/27 21:03:15 terraform-datadog: net/rpc.(*Server).ServeCodec(0xc208113bc0, 0x7f58d0be5678, 0xc20810d6e0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/rpc/server.go:461 +0x6d
+2015/05/27 21:03:15 terraform-datadog: net/rpc.(*Server).ServeConn(0xc208113bc0, 0x7f58d0be55a0, 0xc20802e280)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/rpc/server.go:453 +0x208
+2015/05/27 21:03:15 terraform-datadog: github.com/hashicorp/terraform/rpc.serve(0x7f58d0be55a0, 0xc20802e280, 0x8ea2d0, 0x10, 0x86b7e0, 0xc2081117e0)
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/terraform/rpc/server.go:146 +0x1f9
+2015/05/27 21:03:15 terraform-datadog: github.com/hashicorp/terraform/rpc.func·001()
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/terraform/rpc/server.go:102 +0x265
+2015/05/27 21:03:15 terraform-datadog: created by github.com/hashicorp/terraform/rpc.(*dispenseServer).ResourceProvider
+2015/05/27 21:03:15 terraform-datadog: 	/root/dev/src/github.com/hashicorp/terraform/rpc/server.go:103 +0x107
+2015/05/27 21:03:15 terraform-datadog: 
+2015/05/27 21:03:15 terraform-datadog: goroutine 46 [runnable]:
+2015/05/27 21:03:15 terraform-datadog: net/http.(*persistConn).readLoop(0xc2080f9550)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/http/transport.go:928 +0x9ce
+2015/05/27 21:03:15 terraform-datadog: created by net/http.(*Transport).dialConn
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/http/transport.go:660 +0xc9f
+2015/05/27 21:03:15 terraform-datadog: 
+2015/05/27 21:03:15 terraform-datadog: goroutine 49 [syscall, locked to thread]:
+2015/05/27 21:03:15 terraform-datadog: runtime.goexit()
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1
+2015/05/27 21:03:15 terraform-datadog: 
+2015/05/27 21:03:15 terraform-datadog: goroutine 47 [select]:
+2015/05/27 21:03:15 terraform-datadog: net/http.(*persistConn).writeLoop(0xc2080f9550)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/http/transport.go:945 +0x41d
+2015/05/27 21:03:15 terraform-datadog: created by net/http.(*Transport).dialConn
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/http/transport.go:661 +0xcbc
+2015/05/27 21:03:15 terraform-datadog: 
+2015/05/27 21:03:15 terraform-datadog: goroutine 52 [select]:
+2015/05/27 21:03:15 terraform-datadog: net/http.(*persistConn).readLoop(0xc2080f8fd0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/http/transport.go:928 +0x9ce
+2015/05/27 21:03:15 terraform-datadog: created by net/http.(*Transport).dialConn
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/http/transport.go:660 +0xc9f
+2015/05/27 21:03:15 terraform-datadog: 
+2015/05/27 21:03:15 terraform-datadog: goroutine 53 [select]:
+2015/05/27 21:03:15 terraform-datadog: net/http.(*persistConn).writeLoop(0xc2080f8fd0)
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/http/transport.go:945 +0x41d
+2015/05/27 21:03:15 terraform-datadog: created by net/http.(*Transport).dialConn
+2015/05/27 21:03:15 terraform-datadog: 	/usr/local/go/src/net/http/transport.go:661 +0xcbc
+2015/05/27 21:03:15 [DEBUG] /root/dev/bin/terraform-datadog: plugin process exited
+2015/05/27 21:03:15 [DEBUG] root: eval: *terraform.EvalWriteState
+2015/05/27 21:03:15 [DEBUG] root: eval: *terraform.EvalApplyProvisioners
+2015/05/27 21:03:15 [DEBUG] root: eval: *terraform.EvalIf
+2015/05/27 21:03:15 [DEBUG] root: eval: *terraform.EvalWriteDiff
+2015/05/27 21:03:15 [DEBUG] root: eval: *terraform.EvalIf
+2015/05/27 21:03:15 [DEBUG] root: eval: *terraform.EvalWriteState
+2015/05/27 21:03:15 [DEBUG] root: eval: *terraform.EvalApplyPost
+2015/05/27 21:03:15 [ERROR] root: eval: *terraform.EvalApplyPost, err: 1 error(s) occurred:
+
+* unexpected EOF
+2015/05/27 21:03:15 [ERROR] root: eval: *terraform.EvalSequence, err: 1 error(s) occurred:
+
+* unexpected EOF
+2015/05/27 21:03:15 [ERROR] root: eval: *terraform.EvalOpFilter, err: 1 error(s) occurred:
+
+* unexpected EOF
+2015/05/27 21:03:15 [ERROR] root: eval: *terraform.EvalSequence, err: 1 error(s) occurred:
+
+* unexpected EOF
+2015/05/27 21:03:15 waiting for all plugin processes to complete...
