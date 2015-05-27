@@ -23,7 +23,7 @@ func Exists(d *schema.ResourceData, meta interface{}) (b bool, e error) {
 		b = b && true
 	}
 	if !b {
-		Delete(d, meta)
+		e = Delete(d, meta)
 	}
 	return
 }
