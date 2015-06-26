@@ -55,7 +55,7 @@ func Resource() *schema.Resource {
 			},
 			"metric_key": &schema.Schema{
 				Type:     schema.TypeString,
-				Required: false,
+				Optional: true,
 				Default:  "",
 			},
 
