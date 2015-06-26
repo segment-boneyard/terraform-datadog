@@ -53,7 +53,7 @@ func Resource() *schema.Resource {
 				Type:     schema.TypeString,
 				Required: true,
 			},
-			"key": &schema.Schema{
+			"metric_key": &schema.Schema{
 				Type:     schema.TypeString,
 				Required: false,
 				Default:  "",
