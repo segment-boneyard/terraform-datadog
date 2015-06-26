@@ -1,8 +1,6 @@
 package main
 
 import (
-	"log"
-
 	"github.com/hashicorp/terraform/helper/schema"
 	"github.com/hashicorp/terraform/terraform"
 	"github.com/segmentio/terraform-datadog/monitor"
@@ -30,7 +28,6 @@ func Provider() terraform.ResourceProvider {
 }
 
 func providerConfigure(rd *schema.ResourceData) (interface{}, error) {
-	log.Println(rd)
 	apiKey := rd.Get("api_key").(string)
 	appKey := rd.Get("app_key").(string)
 	return map[string]string{"api_key": apiKey, "app_key": appKey}, nil
