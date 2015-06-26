@@ -41,7 +41,7 @@ func MarshalMetric(d *schema.ResourceData, typeStr string) ([]byte, error) {
 	tags := d.Get("metric_tags").(string)
 	operator := d.Get("operator").(string)
 	var key string
-	if k, ok := d.Get("key").(string); ok {
+	if k, ok := d.Get("metric_key").(string); ok {
 		key = fmt.Sprintf(" by {%s}", k)
 	}
 	query := fmt.Sprintf("%s(%s):%s:%s{%s}%s %s %s", timeAggr, timeWindow, spaceAggr, metric, tags, key, operator, d.Get(fmt.Sprintf("%s.threshold", typeStr)))
